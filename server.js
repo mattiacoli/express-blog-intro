@@ -5,9 +5,13 @@ const app = express()
 // add port for local server
 const port = 3001
 
+// middleware for static assets
+app.use(express.static('public'))
+
 // initialize server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port} `);
+
 
 })
 
@@ -56,4 +60,11 @@ const posts = [
   },
 
 ]
+
+// Create API for blog posts
+app.get('/bacheca', (req, res)=>{
+  res.json(posts)
+})
+
+
 
