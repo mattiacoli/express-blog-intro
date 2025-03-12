@@ -1,4 +1,4 @@
-# Blog Posts API
+# Create Blog Posts API
 
 1. **Set Up the Project**
   - Create file server.js
