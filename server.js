@@ -11,8 +11,6 @@ app.use(express.static('public'))
 // initialize server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port} `);
-
-
 })
 
 // add basic route
@@ -63,6 +61,7 @@ const posts = [
 
 // Create API for blog posts
 app.get('/bacheca', (req, res)=>{
+
   res.json(posts)
 })
 
